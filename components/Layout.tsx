@@ -7,16 +7,18 @@ interface LayoutProps {
   isAuthenticated?: boolean;
 }
 
-const Layout: React.FC<LayoutProps> = ({ isAuthenticated = false }) => {
+const Layout: React.FC<LayoutProps> = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  
+  // Check auth state dynamically
+  const isUserAuthenticated = authApi.isAuthenticated();
+  const user = authApi.getCurrentUser();
 
   const handleLogout = () => {
     authApi.logout();
     navigate('/auth/login');
   };
-
-  const user = authApi.getCurrentUser();
 
   return (
     <div className="min-h-screen bg-[#f5f5f5] flex flex-col font-sans">
@@ -28,7 +30,7 @@ const Layout: React.FC<LayoutProps> = ({ isAuthenticated = false }) => {
             <span className="font-bold text-lg text-slate-800">طرح توران</span>
           </Link>
 
-          {isAuthenticated ? (
+          {isUserAuthenticated ? (
             <div className="flex items-center gap-4">
               <div className="hidden sm:flex flex-col items-end">
                 <span className="text-xs text-slate-500">خوش آمدید</span>
