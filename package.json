@@ -1,7 +1,7 @@
 {
-  "name": "سامانه-تسهیلات-سفر-طرح-توران",
+  "name": "turan-loan-app",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,17 +9,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "18.3.1",
-    "react-dom": "^19.2.3",
-    "@tanstack/react-query": "5.62.0",
-    "react-router-dom": "6.28.0",
-    "axios": "1.7.9",
-    "lucide-react": "0.469.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "@tanstack/react-query": "^5.62.0",
+    "axios": "^1.7.9",
+    "lucide-react": "^0.469.0"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1"
   }
 }
