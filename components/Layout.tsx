@@ -60,7 +60,7 @@ const Layout: React.FC<LayoutProps> = () => {
       {/* Footer */}
       <footer className="bg-white border-t border-slate-200 py-6 mt-8">
         <div className="max-w-4xl mx-auto px-4 text-center text-slate-500 text-sm">
-          <p>© ۱۴۰۳ سامانه تسهیلات سفر توران. تمامی حقوق محفوظ است.</p>
+          <p>© 1404 سامانه تسهیلات سفر توران. تمامی حقوق محفوظ است.</p>
         </div>
       </footer>
     </div>
